@@ -1,0 +1,18 @@
+\section{preguntas del laboratorio}
+¿Que consideraciones deberia tener en cuenta respecto a la medicion en un circuito con puente rectificador?\\
+
+El problema al medir el puente rectificador como nos podemos fijar es que  entrada de un rectificador no comparten  la misma referencia que la salida en tensión, donde en la construcción de la salida se fija a un neutro entre la resistencia y la tensión que vamos a medir, mientras la entrada no está fija a nada.\\
+
+Debemos medir de manera externa la entrada ya sea con un dispositivo que no este a tierra (con un 3 a 2) y que a su vez no esté asociado con la salida, porque la referencias de estos dos son distintos.\\
+
+En el caso que midamos con la misma referencia veremos un resultado diferente ya sea de la entrada o la salida a lo esperado.\\
+
+
+¿Qué condiciones debe tener la señal de entrada al circuito diseñado para que se pueda realizar la rectificación?\\
+
+Las condiciones del rectificador es que sea evidentemente una señal senoidal, otra condición es que la tensión de entrada sea mayor a la caída de tensión de los diodos, en el caso de un rectificador de onda completa es que el valor pico de la señal de entrada debe superar los 1.4V.\\
+
+ Si se quisiera medir con un osciloscopio las señales de entrada y salida al circuito propuesto, ¿que diferencias existen en términos de la distribución de tierras al usar las dos posibles configuraciones mencionadas anteriormente (tap central o puente) para el rectificador de onda completa?.\\
+
+Es preferible utilizar un puente ya que se necesitaría una fuente que tenga dos ondas, o mejor dicho dos entradas para poder simular un poco el tap central, adicional a esto el osciloscopio no puede tener la misma referencia de un punto a otro porque podría perturbar la señal de salida, por lo que lo recomendable seria medir una y luego la otra, si no es el caso lo recomendable seria medir una (la salida) con referencia (cable rojo y cable negro) y la entrada sin refeencia (solo calble rojo) .\\
+
